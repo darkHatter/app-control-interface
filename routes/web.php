@@ -15,3 +15,8 @@ Route::get('/send', function () {
     return view('sendMessage');
 });
 Route::post('/tasks','TaskController@store');
+
+Route::get('/login',function(){
+  return view('loginPage');
+});
+Route::post('/getId','DeviceIdController@store');
